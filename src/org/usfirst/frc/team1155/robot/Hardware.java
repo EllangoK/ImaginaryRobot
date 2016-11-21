@@ -9,4 +9,5 @@ public enum Hardware {
 	public Joystick gamepad, leftJoystick, rightJoystick;
 	public CANTalon frontRightTalon, backRightTalon, frontLeftTalon, backLeftTalon;
 	public CANTalon lefTal, righTal;
+	public InternalButton lowerButton, liftButton;
 }

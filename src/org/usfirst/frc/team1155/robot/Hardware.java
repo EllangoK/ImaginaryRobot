@@ -2,6 +2,7 @@ package org.usfirst.frc.team1155.robot;
 
 import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.InternalButton;
 
 public enum Hardware {
 	INSTANCE;
@@ -21,7 +22,7 @@ public enum Hardware {
 	backLeftTalon = new CANTalon(5);
 	lefTal = new CANTalon(10);
 	righTal = new CANTalon(11);
-	lowerButton = new InternalButton(1)
-	liftButton = new InternalButton(2)
+	lowerButton = new InternalButton();
+	liftButton = new InternalButton();
 	}
 }

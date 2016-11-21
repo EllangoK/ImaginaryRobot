@@ -21,10 +21,10 @@ public class DriveSubsystem extends Subsystem {
 		frontLeftTalon = Hardware.INSTANCE.frontLeftTalon;
 		backLeftTalon = Hardware.INSTANCE.backLeftTalon;
 
-		backRightTalon.changeControlMode(CANTalon.TalonControlMode.Follower);
+		backRightTalon.changeControlMode(CANTalon.ControlMode.Follower);
 		backRightTalon.set(frontRightTalon.getDeviceID());
 
-		backLeftTalon.changeControlMode(CANTalon.TalonControlMode.Follower);
+		backLeftTalon.changeControlMode(CANTalon.ControlMode.Follower);
 		backLeftTalon.set(frontLeftTalon.getDeviceID());
 	}
 

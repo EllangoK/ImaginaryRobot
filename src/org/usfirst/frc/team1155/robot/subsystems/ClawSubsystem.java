@@ -10,10 +10,10 @@ public class ClawSubsystem extends Subsystem {
   private CANTalon lefTal, righTal;
  
   public ClawSubsystem() {
-    lefTal = Hardware.INSTANCE.leftTalon;
-    righTal = Hardware.INSTANCE.rightTalon;
+    lefTal = Hardware.INSTANCE.lefTal;
+    righTal = Hardware.INSTANCE.righTal;
 
-    lefTal.changeControlMode(CANTalon.TalonControlMode.Follower);
+    lefTal.changeControlMode(CANTalon.ControlMode.Follower);
     lefTal.set(righTal.getDeviceID());
   }
   
@@ -25,11 +25,17 @@ public class ClawSubsystem extends Subsystem {
   
   public void lower(boolean pressed){
     if(pressed){
-      righTal.set(-1)
+      righTal.set(-1);
     }
   }
   
   public void stopPls() {
-    righTal.set(0)
+    righTal.set(0);
   }
+
+@Override
+protected void initDefaultCommand() {
+	// TODO Auto-generated method stub
+	
+}
 }

@@ -8,5 +8,5 @@ public enum Hardware {
 
 	public Joystick gamepad, leftJoystick, rightJoystick;
 	public CANTalon frontRightTalon, backRightTalon, frontLeftTalon, backLeftTalon;
-	public CANTalon leftShooterTalon, rightShooterTalon;
+	public CANTalon lefTal, righTal;
 }

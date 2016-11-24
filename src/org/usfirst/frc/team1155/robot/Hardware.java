@@ -1,7 +1,7 @@
 package org.usfirst.frc.team1155.robot;
 
 import edu.wpi.first.wpilibj.CANTalon;
-import edu.wpi.first.wpilibj.Gyro;
+import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.InternalButton;
 
@@ -12,7 +12,7 @@ public enum Hardware {
 	public CANTalon frontRightTalon, backRightTalon, frontLeftTalon, backLeftTalon;
 	public CANTalon lefTal, righTal;
 	public InternalButton lowerButton, liftButton;
-	public Gyro gyro;
+	public AnalogGyro gyro;
 	
 	Hardware(){
 	gamepad = new Joystick(0);
@@ -26,6 +26,6 @@ public enum Hardware {
 	righTal = new CANTalon(11);
 	lowerButton = new InternalButton();
 	liftButton = new InternalButton();
-	gyro = new Gyro(1);
+	gyro = new AnalogGyro(1);
 	}
 }

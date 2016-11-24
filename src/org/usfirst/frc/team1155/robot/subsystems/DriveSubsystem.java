@@ -5,6 +5,7 @@ import org.usfirst.frc.team1155.robot.Hardware;
 import org.usfirst.frc.team1155.robot.PortMap;
 import org.usfirst.frc.team1155.robot.Robot;
 import edu.wpi.first.wpilibj.CANTalon;
+import edu.wpi.first.wpilibj.CANTalon.TalonControlMode;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class DriveSubsystem extends Subsystem {
@@ -21,10 +22,10 @@ public class DriveSubsystem extends Subsystem {
 		frontLeftTalon = Hardware.INSTANCE.frontLeftTalon;
 		backLeftTalon = Hardware.INSTANCE.backLeftTalon;
 
-		backRightTalon.changeControlMode(CANTalon.ControlMode.Follower);
+		backRightTalon.changeControlMode(TalonControlMode.Follower);
 		backRightTalon.set(frontRightTalon.getDeviceID());
 
-		backLeftTalon.changeControlMode(CANTalon.ControlMode.Follower);
+		backLeftTalon.changeControlMode(TalonControlMode.Follower);
 		backLeftTalon.set(frontLeftTalon.getDeviceID());
 	}
 

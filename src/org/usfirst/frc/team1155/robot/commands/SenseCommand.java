@@ -20,7 +20,7 @@ public class TiltSensesCommand extends Command {
 
 	@Override
 	protected double execute() {
-		return sense.getAngle();
+		return sense.getGyroAngle();
 	}
 
 	@Override

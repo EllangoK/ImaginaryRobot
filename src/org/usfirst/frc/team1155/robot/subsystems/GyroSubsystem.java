@@ -14,19 +14,19 @@ public class GyroSubsystem extends Subsystem {
 		gyro = Hardware.INSTANCE.gyro;	
 		}
 
-	public void calibrateGyro{
+	public void calibrateGyro(){
 	gyro.cailbrate();
 	}
 	
-	public void initalizeGyro{
+	public void initalizeGyro(){
 	gyro.initGyro();
 	}
 	
-	public void resetGyro{
+	public void resetGyro(){
 	gyro.reset();
 	}
 	
-	public double getGyroAngle{
+	public double getGyroAngle(){
 	gyro.getAngle();
 	}
 	

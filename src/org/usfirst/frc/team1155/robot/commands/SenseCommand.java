@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj.command.Command;
 
 public class TiltSensesCommand extends Command {
 	
-	private GyroSubsystem sense  = robot.SenseT;
+	private GyroSubsystem sense  = Robot.gyro;
 
 	public TiltCommand() {
 		requires(Robot.gyro);

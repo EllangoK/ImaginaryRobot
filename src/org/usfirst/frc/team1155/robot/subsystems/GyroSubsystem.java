@@ -27,7 +27,7 @@ public class GyroSubsystem extends Subsystem {
 	}
 	
 	public double getGyroAngle(){
-	gyro.getAngle();
+	return gyro.getAngle();
 	}
 	
 	@Override

@@ -18,18 +18,15 @@ public class GyroSubsystem extends Subsystem {
 	gyro.cailbrate();
 	}
 	
-	
 	public void initalizeGyro{
 	gyro.initGyro();
 	}
-	
 	
 	public void resetGyro{
 	gyro.reset();
 	}
 	
-	
-	public void getGyroAngle{
+	public double getGyroAngle{
 	gyro.getAngle();
 	}
 	

@@ -15,7 +15,7 @@ public class GyroSubsystem extends Subsystem {
 		}
 
 	public void calibrateGyro(){
-	gyro.calibrate(); //misspelled calibrate
+	gyro.calibrate();
 	}
 	
 	public void initalizeGyro(){

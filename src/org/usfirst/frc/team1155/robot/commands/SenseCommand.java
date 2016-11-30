@@ -5,13 +5,13 @@ import org.usfirst.frc.team1155.robot.Robot;
 import org.usfirst.frc.team1155.robot.subsystems.GyroSubsystem;
 import edu.wpi.first.wpilibj.command.Command;
 
-public class TiltSensesCommand extends Command {
-	
-	private GyroSubsystem sense  = Robot.gyro;
+public class SenseCommand extends Command {
 
-	public TiltCommand() {
+	private GyroSubsystem sense = Robot.gyro;
+
+	public SenseCommand() {
 		requires(Robot.gyro);
-		
+
 	}
 
 	@Override
@@ -19,8 +19,9 @@ public class TiltSensesCommand extends Command {
 	}
 
 	@Override
-	protected double execute() {
-		return sense.getGyroAngle();
+	protected void execute() {
+		double temp = sense.getGyroAngle();
+		// Don't know what to with the Gyro Output
 	}
 
 	@Override
